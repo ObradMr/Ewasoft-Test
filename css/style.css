@@ -10,6 +10,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .carousel {
   height: 45rem;
   width: 100%;
@@ -248,4 +256,145 @@ body {
 .featured .wrapper .specs .spec-unit {
   font-size: 0.87rem;
   font-style: italic;
+}
+
+.products-container {
+  height: 45.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-container .products-wrapper {
+  border: 1px solid black;
+  height: 35.5rem;
+  width: 71.2rem;
+}
+
+.products-container .products-wrapper .products-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3.7rem;
+}
+
+.products-container .products-wrapper .products-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto 1.8rem;
+}
+
+.products-container .products-wrapper .products-categories .category {
+  color: #929aad;
+}
+
+.products-container .products-wrapper .products-categories .category:hover, .products-container .products-wrapper .products-categories .category:focus {
+  border-bottom: 1px solid #fa2a2a;
+  color: #212121;
+}
+
+.products-container .products-wrapper .cars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-container .products-wrapper .cars .car {
+  height: 25rem;
+  width: 16.4rem;
+}
+
+.products-container .products-wrapper .cars .car-img {
+  display: inline-block;
+  margin: 1.8rem auto 1.5rem;
+  width: 80%;
+  height: 100px;
+}
+
+.products-container .products-wrapper .cars .car-info {
+  text-align: center;
+  color: #929aad;
+  margin-bottom: 5px;
+}
+
+.products-container .products-wrapper .cars .car-name {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #212121;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.products-container .products-wrapper .cars .car .btn {
+  display: block;
+  text-align: center;
+  color: #2A6EFA;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.products-container .products-wrapper .cars .car .specs {
+  margin-bottom: 1.25rem;
+}
+
+.products-container .products-wrapper .cars .car .specs .spec span {
+  color: #929aad;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+.products-container .products-wrapper .cars .car .specs .spec .checkmark {
+  color: #59CEB2;
+}
+
+.products-container .products-wrapper .cars .bottom-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-container .products-wrapper .cars .bottom-selection .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products-container .products-wrapper .cars .bottom-selection .price label {
+  color: #929aad;
+  font-size: 0.8rem;
+}
+
+.products-container .products-wrapper .cars .bottom-selection .price-amount {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212121;
+}
+
+.products-container .products-wrapper .cars .bottom-selection button {
+  border: none;
+  color: #fa2a2a;
+  padding: 0.5rem 1.1rem;
+  background-color: rgba(250, 42, 42, 0.1);
+  border-radius: 17px;
+  margin-right: 1.2rem;
 }
