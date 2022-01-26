@@ -24,12 +24,16 @@ body {
   display: none;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel .mySlides img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .carousel .prev, .carousel .next {
