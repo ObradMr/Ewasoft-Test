@@ -353,3 +353,105 @@ a {
     }
 }
 // Products section END
+
+// Contact section & Footer START
+.contact-section {
+    height: 47.5rem;
+    background: linear-gradient(135deg, #282a2f 0%, #000 100%);
+    padding-top: 7.5rem;
+    //   position: relative;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 71.25rem;
+    margin: auto;
+  
+    .text-wrapper {
+      position: relative;
+      text-align: start;
+  
+      .info {
+        color: #fa2a2a;
+        font-size: 0.75rem;
+        letter-spacing: 5px;
+      }
+  
+      .title {
+        width: 35.6rem;
+        font-size: 3rem;
+        line-height: 3.6rem;
+        color: #fff;
+        z-index: 20;
+        position: absolute;
+      }
+  
+      img {
+        width: 80rem;
+        position: absolute;
+        top: 6.25rem;
+        left: -35rem;
+        z-index: 10;
+      }
+    }
+  
+    .contact-form {
+      width: 28.6rem;
+      height: 32.5rem;
+      padding: 3.25rem 3rem;
+      display: flex;
+      flex-direction: column;
+      background-color: #011f05;
+      position: relative;
+  
+      input,
+      textarea {
+        background: rgba(255, 255, 255, 0.15);
+        padding-left: 1.25rem;
+        margin-bottom: 1.87rem;
+        color: #9b9c9d;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 3px;
+        font-size: 0.87rem;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+  
+      input {
+        width: 100%;
+        height: 3.75rem;
+      }
+  
+      textarea {
+        height: 9.3rem;
+        padding-top: 1.25rem;
+      }
+  
+      .btn {
+        height: 56px;
+        width: 125px;
+        margin: auto;
+        background: transparent;
+        color: #fff;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+}
+  
+.footer {
+    margin: 5rem auto 0;
+    width: 71rem;
+    display: flex;
+    justify-content: space-between;
+  
+    span {
+      font-size: 0.87rem;
+      color: rgba(255, 255, 255, 0.25);
+    }
+  
+    .privacy {
+      margin-left: 1.8rem;
+    }
+}
+// Contact section & Footer END

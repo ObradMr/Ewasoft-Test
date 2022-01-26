@@ -398,3 +398,116 @@ a {
   border-radius: 17px;
   margin-right: 1.2rem;
 }
+
+.contact-section {
+  height: 47.5rem;
+  background: linear-gradient(135deg, #282a2f 0%, #000 100%);
+  padding-top: 7.5rem;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 71.25rem;
+  margin: auto;
+}
+
+.content .text-wrapper {
+  position: relative;
+  text-align: start;
+}
+
+.content .text-wrapper .info {
+  color: #fa2a2a;
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+}
+
+.content .text-wrapper .title {
+  width: 35.6rem;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #fff;
+  z-index: 20;
+  position: absolute;
+}
+
+.content .text-wrapper img {
+  width: 80rem;
+  position: absolute;
+  top: 6.25rem;
+  left: -35rem;
+  z-index: 10;
+}
+
+.content .contact-form {
+  width: 28.6rem;
+  height: 32.5rem;
+  padding: 3.25rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #011f05;
+  position: relative;
+}
+
+.content .contact-form input,
+.content .contact-form textarea {
+  background: rgba(255, 255, 255, 0.15);
+  padding-left: 1.25rem;
+  margin-bottom: 1.87rem;
+  color: #9b9c9d;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  font-size: 0.87rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content .contact-form input {
+  width: 100%;
+  height: 3.75rem;
+}
+
+.content .contact-form textarea {
+  height: 9.3rem;
+  padding-top: 1.25rem;
+}
+
+.content .contact-form .btn {
+  height: 56px;
+  width: 125px;
+  margin: auto;
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer {
+  margin: 5rem auto 0;
+  width: 71rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer span {
+  font-size: 0.87rem;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.footer .privacy {
+  margin-left: 1.8rem;
+}
