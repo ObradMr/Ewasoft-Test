@@ -7,6 +7,7 @@
 
 body {
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .carousel {
@@ -83,4 +84,96 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.about {
+  height: 45rem;
+  width: 100%;
+  border: 1px solid red;
+  padding: 7.5rem 9rem 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .panel {
+  width: 50%;
+}
+
+.about .left {
+  position: relative;
+}
+
+.about .left .img-background {
+  background-color: #212121;
+  height: 100%;
+  width: 22.5rem;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.about .left img {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.about .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .right .info {
+  color: #fa2a2a;
+  line-height: 1rem;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+.about .right .title,
+.about .right .subtitle,
+.about .right .description {
+  width: 50%;
+}
+
+.about .right .title {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.about .right .subtitle {
+  font-size: 1.25rem;
+  color: #212121;
+  line-height: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.about .right .description {
+  line-height: 1.5rem;
+  color: #4e4e4e;
 }

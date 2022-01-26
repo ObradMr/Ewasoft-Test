@@ -6,6 +6,8 @@
 
 body {
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Roboto Condensed', sans-serif;
 }
 
 .carousel {
@@ -69,5 +71,81 @@ body {
     @keyframes fade {
         from {opacity: .4}
         to {opacity: 1}
+    }
+}
+
+// About section
+.about {
+    height: 45rem;
+    width: 100%;
+    border: 1px solid red;
+    padding: 7.5rem 9rem 5.5rem ;
+    display: flex;
+
+    .panel {
+        width: 50%;
+    }
+
+    .left {
+        position: relative;
+        
+        .img-background {
+            background-color: #212121;
+            height: 100%;
+            width: 22.5rem;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: center;
+            font-style: italic;
+            color: rgba(255,255,255,0.25);
+        }
+
+        img {
+            position: absolute;
+            top: 25%;
+            left: 15%;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .info {
+            color: #fa2a2a;
+            line-height: 1rem;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 1.2rem;
+        }
+
+        .title,
+        .subtitle,
+        .description {
+            width: 50%;
+        }
+
+        .title {
+            font-size: 2.4rem;
+            line-height: 3rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #212121;
+            line-height: 1.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .description {
+            line-height: 1.5rem;
+            color: #4e4e4e;
+        }
     }
 }
