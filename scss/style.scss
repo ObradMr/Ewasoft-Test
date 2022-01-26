@@ -10,6 +10,7 @@ body {
     //font-family: 'Roboto Condensed', sans-serif;
 }
 
+// Carousel section START
 .carousel {
     height: 45rem;
     width: 100%;
@@ -76,8 +77,9 @@ body {
         to {opacity: 1}
     }
 }
+// Carousel section END
 
-// About section
+// About section START
 .about {
     height: 45rem;
     width: 100%;
@@ -122,6 +124,7 @@ body {
         .info {
             color: #fa2a2a;
             line-height: 1rem;
+            letter-spacing: 3px;
             font-size: 0.85rem;
             display: inline-block;
             margin-bottom: 1.2rem;
@@ -152,3 +155,70 @@ body {
         }
     }
 }
+// About section END
+
+// Featured section START
+.featured {
+    height: 33.7rem;
+    border: 1px solid green;
+    padding: 6.5rem 0 6.5rem 9.2rem;
+    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, #000000 100%), url(../images/section-banner.jpg) center center;
+
+    .wrapper {
+
+        width: 34.6rem;
+        margin-left: 6rem;
+
+        .info {
+            color: #fa2a2a;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            line-height: 1rem;
+            display: inline-block;
+            margin-bottom: 0.6rem;
+        }
+
+        .title {
+            font-size: 2.3rem;
+            line-height: 3rem;
+            color: #fff;
+            margin-bottom: 1.25rem;
+        }
+
+        .description {
+            color: #CCC5C5;
+            margin-bottom: 2.5rem;
+        }
+
+        .specs {
+            display: flex;
+            justify-content: space-between;
+
+            .spec {
+                height: 9rem;
+                width: 10rem;
+                background-color: rgba(255,255,255,0.15);
+                border: 1px solid rgba(255,255,255,0.25);
+                color: #fff;
+                text-align: center;
+                
+                &-title {
+                    margin: 1.6rem 0 1.25rem;
+                    font-size: 0.87rem;
+                }
+
+                &-value {
+                    font-size: 1.75rem;
+                    margin-bottom: 0.6rem;
+                }
+
+                &-unit {
+                    font-size: 0.87rem;
+                    font-style: italic;
+                }
+
+            }
+        }
+    }
+}
+// Featured section END

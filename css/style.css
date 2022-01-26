@@ -153,6 +153,7 @@ body {
 .about .right .info {
   color: #fa2a2a;
   line-height: 1rem;
+  letter-spacing: 3px;
   font-size: 0.85rem;
   display: inline-block;
   margin-bottom: 1.2rem;
@@ -180,4 +181,71 @@ body {
 .about .right .description {
   line-height: 1.5rem;
   color: #4e4e4e;
+}
+
+.featured {
+  height: 33.7rem;
+  border: 1px solid green;
+  padding: 6.5rem 0 6.5rem 9.2rem;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(#000000)), url(../images/section-banner.jpg) center center;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../images/section-banner.jpg) center center;
+}
+
+.featured .wrapper {
+  width: 34.6rem;
+  margin-left: 6rem;
+}
+
+.featured .wrapper .info {
+  color: #fa2a2a;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  line-height: 1rem;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.featured .wrapper .title {
+  font-size: 2.3rem;
+  line-height: 3rem;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+.featured .wrapper .description {
+  color: #CCC5C5;
+  margin-bottom: 2.5rem;
+}
+
+.featured .wrapper .specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured .wrapper .specs .spec {
+  height: 9rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  text-align: center;
+}
+
+.featured .wrapper .specs .spec-title {
+  margin: 1.6rem 0 1.25rem;
+  font-size: 0.87rem;
+}
+
+.featured .wrapper .specs .spec-value {
+  font-size: 1.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.featured .wrapper .specs .spec-unit {
+  font-size: 0.87rem;
+  font-style: italic;
 }
