@@ -1,0 +1,124 @@
+// Products section START
+.products-container {
+    height: 45.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .products-wrapper {
+        height: 35.5rem;
+        width: 71.2rem;
+
+        .products-title {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 3.7rem;
+        }
+
+        .products-categories {
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            margin: 0 auto 1.8rem;
+
+            .category {
+                color: #929aad;
+
+                &:hover,
+                &:focus {
+                    border-bottom: 1px solid #fa2a2a;
+                    color: #212121;
+                }
+            }
+        }
+
+        .cars {
+            display: flex;
+            justify-content: space-between;
+
+            .car {
+                height: 25rem;
+                width: 16.4rem;
+                
+                &-img {
+                    display: inline-block;
+                    margin: 1.8rem auto 1.5rem;
+                    width: 80%;
+                    height: 100px;
+                }
+
+                &-info {
+                    text-align: center;
+                    color: #929aad;
+                    margin-bottom: 5px;
+                }
+
+                &-name {
+                    text-align: center;
+                    font-size: 1.25rem;
+                    color: #212121;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                .btn {
+                    display: block;
+                    color: #2A6EFA;
+                    font-size: 0.8rem;
+                    margin:0 auto 1rem;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .specs {
+                    margin-bottom: 1.25rem;
+                    .spec {
+
+                        span {
+                            color: #929aad;
+                            font-size: 0.9rem;
+                            line-height: 1.8rem;
+                        }
+    
+                        .checkmark {
+                            color: #59CEB2;
+                        }
+                    }
+                }
+            }
+
+            .bottom-selection {
+                display: flex;
+                justify-content: space-between;
+
+                .price {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        color: #929aad;
+                        font-size: 0.8rem;
+                    }
+
+                    &-amount {
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                        color: #212121;
+                    }
+                }
+
+                button {
+                    border: none;
+                    color: #fa2a2a;
+                    padding: 0.5rem 1.1rem;
+                    background-color: rgba(250,42,42,0.1);
+                    border-radius: 17px;
+                    margin-right: 1.2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+// Products section END

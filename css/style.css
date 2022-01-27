@@ -6,7 +6,6 @@
 }
 
 body {
-  width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-.carousel {
+.header-carousel {
   height: 45rem;
   width: 100%;
   position: relative;
@@ -28,23 +27,141 @@ a {
   /* Fading animation */
 }
 
-.carousel .mySlides {
+.header-carousel .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.header-carousel .header img {
+  margin-left: 2.5rem;
+  width: 5.5rem;
+}
+
+.header-carousel .header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-carousel .header .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2.5rem;
+}
+
+.header-carousel .header .nav-list .dropdown {
+  position: relative;
+}
+
+.header-carousel .header .nav-list .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-carousel .header .nav-list .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 33px;
+  width: 8.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.header-carousel .header .nav-list .dropdown .dropdown-content .droplink {
+  display: inline-block;
+  width: 80%;
+  color: #fff;
+  margin: 15px 0 15px 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-carousel .header .nav-list .dropdown .dropdown-content .droplink:hover {
+  border-bottom: 1px solid #fa2a2a;
+}
+
+.header-carousel .header .nav-list .nav-link {
+  font-size: 0.87rem;
+  padding: 1rem 1.9rem;
+  color: #fff;
+}
+
+.header-carousel .header .nav-list .nav-link:hover {
+  border-bottom: 1px solid #fa2a2a;
+}
+
+.header-carousel .header .nav-list .contact {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+.header-carousel .header .nav-list .contact:hover {
+  border-bottom: none;
+  background-color: #fa2a2a;
+}
+
+.header-carousel .text-box {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  z-index: 100;
+  width: 28.5rem;
+  height: 20rem;
+}
+
+.header-carousel .text-box .info {
+  color: #fa2a2a;
+  font-size: 0.87rem;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.header-carousel .text-box .title {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.header-carousel .text-box .description {
+  color: #ccc5c5;
+  width: 19.3rem;
+  padding-left: 1.87rem;
+  border-left: 1px solid #fa2a2a;
+}
+
+.header-carousel .mySlides {
   display: none;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.carousel .mySlides img {
+.header-carousel .mySlides img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.carousel .prev, .carousel .next {
+.header-carousel .prev, .header-carousel .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -64,16 +181,16 @@ a {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-.carousel .next {
+.header-carousel .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.carousel .prev:hover, .carousel .next:hover {
+.header-carousel .prev:hover, .header-carousel .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.carousel .fade {
+.header-carousel .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -101,7 +218,6 @@ a {
 .about {
   height: 45rem;
   width: 100%;
-  border: 1px solid red;
   padding: 7.5rem 9rem 5.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +309,6 @@ a {
 
 .featured {
   height: 33.7rem;
-  border: 1px solid green;
   padding: 6.5rem 0 6.5rem 9.2rem;
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(#000000)), url(../images/section-banner.jpg) center center;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../images/section-banner.jpg) center center;
@@ -272,7 +387,6 @@ a {
 }
 
 .products-container .products-wrapper {
-  border: 1px solid black;
   height: 35.5rem;
   width: 71.2rem;
 }
@@ -340,10 +454,12 @@ a {
 
 .products-container .products-wrapper .cars .car .btn {
   display: block;
-  text-align: center;
   color: #2A6EFA;
   font-size: 0.8rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .products-container .products-wrapper .cars .car .specs {
@@ -397,6 +513,7 @@ a {
   background-color: rgba(250, 42, 42, 0.1);
   border-radius: 17px;
   margin-right: 1.2rem;
+  cursor: pointer;
 }
 
 .contact-section {

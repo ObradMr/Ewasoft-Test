@@ -1,5 +1,5 @@
 // Carousel Functionality
-const slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -62,15 +62,19 @@ const cars = [
     }
 ];
 
+function openModalConfigurator(index) {
+    console.log(cars[index]);
+}
+
 function displayCars() {
-    cars.forEach(car => {
+    cars.forEach((car, index) => {
         const carCard = document.createElement('div');
         carCard.classList.add('car');
         carCard.innerHTML = `
         <img class="car-img" src="${car.image}" alt="">
         <p class="car-info">${car.info}</p>
         <p class="car-name">${car.name}</p>
-        <a href="#" class="btn">Configurator</a>
+        <button class="btn" onclick="openModalConfigurator(${index})">Configurator</button>
         <ul class="specs">
             <li class="spec">
                 <span class="checkmark">&#10003;</span>
