@@ -103,6 +103,11 @@ function displayCars() {
 
 document.addEventListener('DOMContentLoaded', displayCars());
 
+// Prevent submit
+document.getElementById('submitBtn').addEventListener('click', e => {
+    e.preventDefault();
+})
+
 // Hamburger menu functionality
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.nav-bar');
