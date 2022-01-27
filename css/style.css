@@ -45,7 +45,7 @@ a {
   margin-top: 2.5rem;
 }
 
-.header-carousel .header img {
+.header-carousel .header .logo {
   margin-left: 2.5rem;
   width: 5.5rem;
 }
@@ -114,6 +114,10 @@ a {
 .header-carousel .header .nav-list .contact:hover {
   border-bottom: none;
   background-color: #fa2a2a;
+}
+
+.header-carousel .header .hamburger {
+  display: none;
 }
 
 .header-carousel .text-box {
@@ -684,36 +688,56 @@ a {
     height: 75rem;
   }
   .header-carousel .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 2rem;
   }
-  .header-carousel .header img {
+  .header-carousel .header .logo {
     margin: 0;
     width: auto;
   }
-  .header-carousel .header .nav-list {
+  .header-carousel .header .nav-bar {
+    display: none;
+  }
+  .header-carousel .header .show-nav {
+    display: block;
+    position: relative;
+  }
+  .header-carousel .header .show-nav .nav-list {
+    display: block;
+    position: absolute;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    height: 100%;
     margin: 3rem auto 0;
   }
-  .header-carousel .header .nav-list .dropdown .dropdown-content {
+  .header-carousel .header .show-nav .nav-list .dropdown .dropdown-content {
     top: 20px;
-    left: 250px;
+    left: -200px;
     width: 12rem;
   }
-  .header-carousel .header .nav-list .dropdown .dropdown-content .droplink {
-    font-size: 1.7rem;
+  .header-carousel .header .show-nav .nav-list .dropdown .dropdown-content .droplink {
+    font-size: 2rem;
   }
-  .header-carousel .header .nav-list .nav-link {
+  .header-carousel .header .show-nav .nav-list .nav-link {
     display: inline-block;
-    font-size: 1.7rem;
+    width: 22rem;
+    height: 8rem;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .header-carousel .header .hide {
+    opacity: 0.6;
+  }
+  .header-carousel .header .hamburger {
+    display: block;
+    width: 50px;
+    cursor: pointer;
   }
   .header-carousel .text-box {
     top: 40%;
@@ -731,6 +755,16 @@ a {
   }
   .header-carousel .mySlides img {
     height: 100%;
+  }
+  .header-carousel .prev,
+  .header-carousel .next {
+    font-size: 2.2rem;
+  }
+  .header-carousel .prev {
+    border-radius: 0 3px 3px 0;
+  }
+  .header-carousel .next {
+    border-radius: 3px 0 0 3px;
   }
   .about {
     height: 80rem;

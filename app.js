@@ -101,4 +101,13 @@ function displayCars() {
     })
 }
 
-document.addEventListener('DOMContentLoaded', displayCars())
+document.addEventListener('DOMContentLoaded', displayCars());
+
+// Hamburger menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.nav-bar');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('hide');
+    navbar.classList.toggle('show-nav');
+})

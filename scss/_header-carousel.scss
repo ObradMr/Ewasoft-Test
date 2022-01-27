@@ -14,7 +14,7 @@
         justify-content: space-between;
         margin-top: 2.5rem;
 
-        img {
+        .logo {
             margin-left: 2.5rem;
             width: 5.5rem;
         }
@@ -79,6 +79,10 @@
                 }
             }
             
+        }
+
+        .hamburger {
+            display: none;
         }
     }
 
