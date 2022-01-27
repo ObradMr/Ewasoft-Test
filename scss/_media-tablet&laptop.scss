@@ -1,0 +1,71 @@
+@media (max-width: 1320px) {
+    // Header-Carousel section
+    .header-carousel {
+        height: 40rem;
+    }
+
+    // About section
+    .about {
+        padding: 2rem 4rem;
+
+        .left {
+            img {
+                left: 0;
+            }
+        }
+
+        .right {
+
+            .title,
+            .subtitle,
+            .description {
+                width: 75%;
+            }
+        }
+    }
+
+    // Featured section
+    .featured {
+        padding: 3rem 0 3rem;
+
+        .wrapper {
+            margin-top: 3rem;
+            margin-left: 8.3rem;
+        }
+    }
+
+    // Products section
+    .products-container {
+
+        .products-wrapper {
+
+            .cars {
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    //Contact section
+    .contact-section {
+        height: 45rem;
+        padding-top: 5rem;
+
+        .text-wrapper {
+            margin-left: 3rem;
+
+            img {
+                width: 60rem;
+                top: 12rem;
+                left: -22rem;
+            }
+        }
+
+        .contact-form {
+            margin-right: 3rem;
+        }
+
+        .footer {
+            padding: 0 3rem;    
+        }
+    }
+}

@@ -1,0 +1,309 @@
+@media (max-width: 539px) {
+    // Header & Carousel section
+    .header-carousel {
+        height: 75rem;
+
+        .header {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin: 0;
+                width: auto;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                margin: 3rem auto 0;
+
+                .dropdown {
+                    .dropdown-content {
+                        top: 20px;
+                        left: 250px;
+                        width: 12rem;
+                        .droplink {
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+
+                .nav-link {
+                    display: inline-block;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        .text-box {
+            top: 40%;
+            width: 35rem;
+
+            .info {
+                font-size: 1.5rem;
+            }
+
+            .title {
+                font-size: 4.5rem;
+            }
+
+            .description {
+                font-size: 2.2rem;
+                width: 25rem;
+            }
+        }
+
+        .mySlides {
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    // About section
+    .about {
+        height: 80rem;
+        flex-direction: column;
+
+        .panel {
+            width: 100%;
+            height: 50%;
+        }
+
+        .left {
+
+            .img-background {
+                width: 25rem;
+                font-size: 2rem;
+            }
+
+            img {
+                top: 5.5rem;
+                width: 80%;
+                left: 10%;
+            }
+        }
+
+        .right {
+
+            .title,
+            .subtitle,
+            .description {
+                width: 90%;
+                text-align: center;
+            }
+
+            .info {
+                font-size: 1.8rem;
+            }
+
+            .title {
+                font-size: 3.6rem;
+                line-height: 1.2;
+            }
+
+            .subtitle {
+                font-size: 3rem;
+                line-height: 1.2;
+            }
+
+            .description {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    // Featured
+    .featured {
+        height: 82rem;
+
+        .wrapper {
+            width: 85%;
+            margin: 3rem auto 0;
+
+            .info {
+                font-size: 2rem;
+                display: block;
+                text-align: center;
+            }
+
+            .title {
+                font-size: 3.6rem;
+                text-align: center;
+                margin: 2.5rem auto;
+            }
+
+            .description {
+                font-size: 2.8rem;
+                text-align: center;
+            }
+
+            .specs {
+                flex-direction: column;
+                margin-left: 5rem;
+                gap: 1rem;
+
+                .spec {
+                    height: 15rem;
+                    width: 20rem;
+
+                    &-title {
+                        font-size: 2.2rem;
+                    }
+
+                    &-value {
+                        font-size: 4rem;
+                    }
+
+                    &-unit {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // Products
+    .products-container {
+        height: 185rem;
+
+        .products-wrapper {
+            height: 100%;
+            width: 100%;
+
+            .products-title {
+                font-size: 4rem;
+                margin: 3rem auto;
+            }
+
+            .products-categories {
+                width: 90%;
+
+                .category {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .cars {
+                flex-direction: column;
+                align-items: center;
+                
+                .car {
+                    width: 38rem;
+                    height: 42rem;
+
+                    &-img {
+                        display: block;
+                        height: auto;
+                        margin: 1rem auto;
+                    }
+
+                    &-info {
+                        font-size: 2rem;
+                    }
+
+                    &-name {
+                        font-size: 3rem;
+                    }
+
+                    .btn {
+                        font-size: 2.2rem;
+                    }
+
+                    .specs {
+                        .spec {
+                            margin-bottom: 1rem;
+                            margin-left: 1rem;
+                            span {
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+
+                    .bottom-selection {
+                        .price {
+                            margin-left: 1rem;
+                            label {
+                                font-size: 2rem;
+                            }
+
+                            &-amount {
+                                font-size: 3rem;
+                            }
+                        }
+
+                        button {
+                            font-size: 2.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Contact & Footer Section
+    .contact-section {
+        height: 84rem;
+        .content {
+            flex-direction: column;
+            align-items: center;
+            height: 80%;
+
+            .text-wrapper {
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+
+                .info {
+                    font-size: 1.8rem;
+                }
+
+                .title {
+                    width: 80%;
+                    font-size: 3.6rem;
+                    position: static;
+                    margin: 1rem auto;
+                }
+
+                img {
+                    top: 48rem;
+                    left: -30rem;
+                }
+
+            }
+
+            .contact-form {
+                height: 80%;
+                width: 80%;
+                margin-right: 0;
+
+                input {
+                    height: 6rem;
+                    font-size: 2.2rem;
+                }
+
+                textarea {
+                    height: 18rem;
+                    font-size: 2.2rem;
+                }
+
+                .btn {
+                    width: 12rem;
+                    height: 6rem;
+                    font-size: 2.2rem;
+                    border: 3px solid rgba(255, 255, 255, 0.25);
+                }
+            }
+        }
+
+        .footer {
+            margin: 10rem auto 0;
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
